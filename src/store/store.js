@@ -10,7 +10,7 @@ import { rootReducer } from './root-reducer';
 const persistConfig = {
   key: 'root',
   storage,
-  blacklist: ['user'],
+  whitelist: ['cart'],
   // user is coming from firebase auth so we don't want a conflict
   // between firebase and localstorage so we can blacklist it so it does not persist
 };
