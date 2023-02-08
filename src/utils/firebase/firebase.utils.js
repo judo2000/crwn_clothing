@@ -59,6 +59,7 @@ export const addCollectionAndDocuments = async (
   });
 
   await batch.commit();
+  console.log('done');
 };
 
 export const getCategoriesAndDocuments = async () => {
@@ -81,6 +82,7 @@ export const createUserDocumentFromAuth = async (
 
   if (!userSnapshot.exists()) {
     const { displayName, email } = userAuth;
+
     const createdAt = new Date();
 
     try {

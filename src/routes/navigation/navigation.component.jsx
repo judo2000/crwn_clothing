@@ -20,7 +20,6 @@ import {
 const Navigation = () => {
   const currentUser = useSelector(selectCurrentUser);
   const isCartOpen = useSelector(selectIsCartOpen);
-
   return (
     <>
       <NavigationContainer>
